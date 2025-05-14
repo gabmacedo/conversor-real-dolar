@@ -1,0 +1,82 @@
+:root {
+    --background: #FFF;
+    --primary: #333333;
+    --secondary: #909090;
+    --secondary-light: #c8c8c8;
+    --primary-green: #0ba360
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    background: var(--background);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+
+main #logo {
+    height: 150px;
+    margin: 0 auto;
+}
+
+
+main section {
+    display: flex;
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-green);
+    border-radius: 10px;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 60rem;
+}
+
+main section span {
+    display: block;
+    margin-right: 1rem;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+main section input {
+    width: 100%;
+    background: transparent;
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    color: var(--background);
+    margin-top: 1rem;
+}
+
+@media(max-width: 450px) {
+    main {
+        width: 350px;
+    }
+}
